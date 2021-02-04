@@ -1,0 +1,19 @@
+{
+    "name": "vendor/sistema-estoque",
+    "description": "Description of project sistema_estoque.",
+    "authors": [
+        {
+            "name": "Elivelton",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": ""
+        },
+        "classmap": [
+            "app"
+        ]
+    }
+}
