@@ -22,6 +22,8 @@ class ComposerStaticInit5c205ebc4e7239509705267cd287e703
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'app\\data\\Conexao' => __DIR__ . '/../..' . '/app/data/Conexao.php',
+        'app\\model\\CategoriaModel' => __DIR__ . '/../..' . '/app/model/CategoriaModel.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
