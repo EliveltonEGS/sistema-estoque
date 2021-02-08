@@ -2,10 +2,19 @@
 
 namespace app\data;
 
+use PDO;
+
+require 'config.php';
+
 class Conexao {
 
-    public function conexao() {
-        $conexao = mysqli_connect("localhost", "root", "", "sistema");
+    public function conectar() {
+        try {
+            $conn = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
+            return $conn;
+        } catch (PDOException $ex) {
+            throw new \Exception("->Erro connection database<-");
+        }
     }
 
 }
