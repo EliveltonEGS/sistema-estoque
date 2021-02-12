@@ -1,6 +1,4 @@
 <?php
-
+require './app/helper/teste.php';
 require './vendor/autoload.php';
-
-$c = new \app\data\Conexao();
-$c->conectar();
+require './app/controller/categoria/adicionarCategoria.php';

@@ -25,24 +25,24 @@ class CategoriaModel implements ICategoriaModel {
     }
 
     public function atualizar(\app\entities\Categoria $categoria) {
-        $sql = "update categorias set nome_categoria = :descricao where id_categoria = :id)";
+        $sql = "update categorias set nome_categoria = :descricao where id_categoria = :id";
 
         $stmt = $this->conexao->conectar()->prepare($sql);
 
         $categoria = array(
             ':descricao' => $categoria->getDescricao(),
             ':id' => $categoria->getId());
-
+        
         $stmt->execute($categoria);
     }
 
     public function buscarPorId(int $id) {
-        $sql = "select * from categorias where id_categoria = :id)";
+        $sql = "select * from categorias where id_categoria = :id";
 
         $stmt = $this->conexao->conectar()->prepare($sql);
 
-        $categoria = array(':id' => $categoria->getId());
-
+        $categoria = array(':id' => $id);
+        
         $stmt->execute($categoria);
         return $stmt->fetch();
     }

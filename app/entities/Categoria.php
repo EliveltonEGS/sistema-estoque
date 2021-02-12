@@ -6,8 +6,8 @@ class Categoria extends EntityBase {
 
     private string $descricao;
     private Usuario $usuario;
-    private \DateTime $data;
-
+    private $data;
+    
     public function setDescricao($value) {
         $this->descricao = $value;
     }
