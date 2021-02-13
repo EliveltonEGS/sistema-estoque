@@ -11,38 +11,33 @@ class CategoriaModel implements ICategoriaModel {
     }
 
     public function adicionar(\app\entities\Categoria $categoria) {
-        $sql = "insert into categorias(id_usuario, nome_categoria, dataCaptura) "
-                . "values (:id_usuario, :descricao, :data)";
+        $sql = "insert into categoria(descricao) "
+                . "values (:descricao)";
 
         $stmt = $this->conexao->conectar()->prepare($sql);
 
-        $categoria = array(
-            ':id_usuario' => $categoria->getUsuario()->getId(),
-            ':descricao' => $categoria->getDescricao(),
-            ':data' => $categoria->getData());
-
+        $categoria = array(':descricao' => $categoria->getDescricao());
         $stmt->execute($categoria);
     }
 
     public function atualizar(\app\entities\Categoria $categoria) {
-        $sql = "update categorias set nome_categoria = :descricao where id_categoria = :id";
+        $sql = "update categoria set descricao = :descricao where categoria_ida = :categoria_ida";
 
         $stmt = $this->conexao->conectar()->prepare($sql);
 
         $categoria = array(
             ':descricao' => $categoria->getDescricao(),
-            ':id' => $categoria->getId());
-        
+            ':categoria_ida' => $categoria->getId());
+
         $stmt->execute($categoria);
     }
 
     public function buscarPorId(int $id) {
-        $sql = "select * from categorias where id_categoria = :id";
+        $sql = "select * from categoria where categoria_ida = :id";
 
         $stmt = $this->conexao->conectar()->prepare($sql);
 
-        $categoria = array(':id' => $id);
-        
+        $categoria = array(':categoria_id' => $id);
         $stmt->execute($categoria);
         return $stmt->fetch();
     }
