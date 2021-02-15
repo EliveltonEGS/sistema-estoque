@@ -1,14 +1,11 @@
 <?php
 
-$categoria = new \app\entities\Categoria();
-$usuario = new app\entities\Usuario();
 
-$categoria->setId(2);
-$categoria->setDescricao("produto");
+$categoria = new app\entities\Categoria();
+
+//$categoria->setId(2);
+$categoria->setDescricao("cat 01");
 
 $catModel = new app\model\categorias\CategoriaModel();
-$res = $catModel->buscarPorId(2);
-
-print_r($res['nome_categoria']);
-
+$catModel->adicionar($categoria);
 
