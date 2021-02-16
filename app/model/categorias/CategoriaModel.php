@@ -42,4 +42,11 @@ class CategoriaModel implements ICategoriaModel {
         return $stmt->fetch();
     }
 
+    public function todos(){
+        $sql = "SELECT * FROM categoria AS c ORDER BY c.categoria_id ASC";
+        
+        $stmt = $this->conexao->conectar()->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
 }
