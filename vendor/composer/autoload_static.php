@@ -25,7 +25,6 @@ class ComposerStaticInit5c205ebc4e7239509705267cd287e703
         'app\\data\\Conexao' => __DIR__ . '/../..' . '/app/data/Conexao.php',
         'app\\entities\\Categoria' => __DIR__ . '/../..' . '/app/entities/Categoria.php',
         'app\\entities\\EntityBase' => __DIR__ . '/../..' . '/app/entities/EntityBase.php',
-        'app\\entities\\Usuario' => __DIR__ . '/../..' . '/app/entities/Usuario.php',
         'app\\model\\categorias\\CategoriaModel' => __DIR__ . '/../..' . '/app/model/categorias/CategoriaModel.php',
         'app\\model\\categorias\\ICategoriaModel' => __DIR__ . '/../..' . '/app/model/categorias/ICategoriaModel.php',
     );
