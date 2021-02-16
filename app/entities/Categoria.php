@@ -6,12 +6,12 @@ class Categoria extends EntityBase {
 
     private string $descricao;
 
-    public function setDescricao($value) {
-        $this->descricao = $value;
+    function getDescricao(): string {
+        return $this->descricao;
     }
 
-    public function getDescricao() {
-        return $this->descricao;
+    function setDescricao(string $descricao): void {
+        $this->descricao = $descricao;
     }
 
 }

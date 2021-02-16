@@ -10,7 +10,6 @@ return array(
     'app\\data\\Conexao' => $baseDir . '/app/data/Conexao.php',
     'app\\entities\\Categoria' => $baseDir . '/app/entities/Categoria.php',
     'app\\entities\\EntityBase' => $baseDir . '/app/entities/EntityBase.php',
-    'app\\entities\\Usuario' => $baseDir . '/app/entities/Usuario.php',
     'app\\model\\categorias\\CategoriaModel' => $baseDir . '/app/model/categorias/CategoriaModel.php',
     'app\\model\\categorias\\ICategoriaModel' => $baseDir . '/app/model/categorias/ICategoriaModel.php',
 );
