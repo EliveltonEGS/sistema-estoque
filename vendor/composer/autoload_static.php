@@ -25,8 +25,17 @@ class ComposerStaticInit5c205ebc4e7239509705267cd287e703
         'app\\data\\Conexao' => __DIR__ . '/../..' . '/app/data/Conexao.php',
         'app\\entities\\Categoria' => __DIR__ . '/../..' . '/app/entities/Categoria.php',
         'app\\entities\\EntityBase' => __DIR__ . '/../..' . '/app/entities/EntityBase.php',
+        'app\\entities\\ItemVenda' => __DIR__ . '/../..' . '/app/entities/ItemVenda.php',
+        'app\\entities\\Produto' => __DIR__ . '/../..' . '/app/entities/Produto.php',
+        'app\\entities\\Venda' => __DIR__ . '/../..' . '/app/entities/Venda.php',
         'app\\model\\categorias\\CategoriaModel' => __DIR__ . '/../..' . '/app/model/categorias/CategoriaModel.php',
         'app\\model\\categorias\\ICategoriaModel' => __DIR__ . '/../..' . '/app/model/categorias/ICategoriaModel.php',
+        'app\\model\\itemVendas\\IItemVendasModel' => __DIR__ . '/../..' . '/app/model/itemVendas/IItemVendasModel.php',
+        'app\\model\\itemVendas\\ItemVendaModel' => __DIR__ . '/../..' . '/app/model/itemVendas/ItemVendaModel.php',
+        'app\\model\\produtos\\IProdutoModel' => __DIR__ . '/../..' . '/app/model/produtos/IProdutoModel.php',
+        'app\\model\\produtos\\ProdutoModel' => __DIR__ . '/../..' . '/app/model/produtos/ProdutoModel.php',
+        'app\\model\\vendas\\IVendasModel' => __DIR__ . '/../..' . '/app/model/Vendas/IVendasModel.php',
+        'app\\model\\vendas\\VendaModel' => __DIR__ . '/../..' . '/app/model/Vendas/VendaModel.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
