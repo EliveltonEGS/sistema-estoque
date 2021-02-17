@@ -2,15 +2,18 @@
 
 namespace app\model\produtos;
 
-class ProdutoModel implements IProdutoModel {
+use app\data\Conexao;
+use app\entities\Produto;
+
+class ProdutoModel {
 
     private $conexao;
 
     public function __construct() {
-        $this->conexao = new \app\data\Conexao();
+        $this->conexao = new Conexao();
     }
 
-    public function adicionar(\app\entities\Produto $produto) {
+    public function adicionar(Produto $produto) {
         $sql = "INSERT INTO produto (descricao, preco, categoria_id) "
                 . "VALUES (:descricao, :preco, :categoria_id)";
 
@@ -23,7 +26,7 @@ class ProdutoModel implements IProdutoModel {
         $stmt->execute($produto);
     }
 
-    public function atualizar(\app\entities\Produto $produto) {
+    public function atualizar(Produto $produto) {
         $sql = "UPDATE produto SET descricao = :descricao, preco = :preco, categoria_id = :categoria_id WHERE produto_id = :produto_id";
 
         $stmt = $this->conexao->conectar()->prepare($sql);

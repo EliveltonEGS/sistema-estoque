@@ -2,15 +2,18 @@
 
 namespace app\model\vendas;
 
-class VendaModel implements IVendasModel {
+use app\entities\Venda;
+use app\data\Conexao;
+
+class VendaModel {
 
     private $conexao;
 
     public function __construct() {
-        $this->conexao = new \app\data\Conexao();
+        $this->conexao = new Conexao();
     }
 
-    public function adicionar(\app\entities\Venda $venda) {
+    public function adicionar(Venda $venda) {
         $sql = "INSERT INTO venda (valor_total, data) VALUES (:valor_total, :data)";
         
         $stmt = $this->conexao->conectar()->prepare($sql);

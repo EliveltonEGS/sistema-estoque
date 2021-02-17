@@ -2,6 +2,8 @@
 
 namespace app\entities;
 
+require_once("EntityBase.php");
+
 class Categoria extends EntityBase {
 
     private string $descricao;
