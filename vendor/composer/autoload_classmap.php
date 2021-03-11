@@ -13,12 +13,5 @@ return array(
     'app\\entities\\ItemVenda' => $baseDir . '/app/entities/ItemVenda.php',
     'app\\entities\\Produto' => $baseDir . '/app/entities/Produto.php',
     'app\\entities\\Venda' => $baseDir . '/app/entities/Venda.php',
-    'app\\model\\categorias\\CategoriaModel' => $baseDir . '/app/model/categorias/CategoriaModel.php',
-    'app\\model\\categorias\\ICategoriaModel' => $baseDir . '/app/model/categorias/ICategoriaModel.php',
-    'app\\model\\itemVendas\\IItemVendasModel' => $baseDir . '/app/model/itemVendas/IItemVendasModel.php',
-    'app\\model\\itemVendas\\ItemVendaModel' => $baseDir . '/app/model/itemVendas/ItemVendaModel.php',
-    'app\\model\\produtos\\IProdutoModel' => $baseDir . '/app/model/produtos/IProdutoModel.php',
-    'app\\model\\produtos\\ProdutoModel' => $baseDir . '/app/model/produtos/ProdutoModel.php',
-    'app\\model\\vendas\\IVendasModel' => $baseDir . '/app/model/Vendas/IVendasModel.php',
-    'app\\model\\vendas\\VendaModel' => $baseDir . '/app/model/Vendas/VendaModel.php',
+    'app\\model\\CategoriaModel' => $baseDir . '/app/model/CategoriaModel.php',
 );

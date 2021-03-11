@@ -4,13 +4,13 @@ namespace app\entities;
 
 class EntityBase {
 
-    private int $id;
+    private $id;
 
-    function getId(): int {
+    function getId() {
         return $this->id;
     }
 
-    function setId(int $id): void {
+    function setId(int $id) {
         $this->id = $id;
     }
 

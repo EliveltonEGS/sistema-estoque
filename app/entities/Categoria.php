@@ -6,13 +6,13 @@ require_once("EntityBase.php");
 
 class Categoria extends EntityBase {
 
-    private string $descricao;
+    private $descricao;
 
-    function getDescricao(): string {
+    function getDescricao() {
         return $this->descricao;
     }
 
-    function setDescricao(string $descricao): void {
+    function setDescricao(string $descricao) {
         $this->descricao = $descricao;
     }
 

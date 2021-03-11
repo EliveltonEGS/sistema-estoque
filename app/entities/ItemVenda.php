@@ -4,11 +4,11 @@ namespace app\entities;
 
 class ItemVenda extends EntityBase {
 
-    private int $quantidade;
+    private $quantidade;
     private Produto $produto;
     private Venda $venda;
 
-    function getQuantidade(): int {
+    function getQuantidade() {
         return $this->quantidade;
     }
 
@@ -20,7 +20,7 @@ class ItemVenda extends EntityBase {
         return $this->venda;
     }
 
-    function setQuantidade(int $quantidade): void {
+    function setQuantidade($quantidade) {
         $this->quantidade = $quantidade;
     }
 

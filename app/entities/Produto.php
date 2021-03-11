@@ -4,20 +4,20 @@ namespace app\entities;
 
 class Produto extends EntityBase {
 
-    private string $descricao;
-    private double $quantidade;
-    private double $preco;
+    private $descricao;
+    private $quantidade;
+    private $preco;
     private Categoria $categoria;
 
-    function getDescricao(): string {
+    function getDescricao() {
         return $this->descricao;
     }
 
-    function getQuantidade(): double {
+    function getQuantidade() {
         return $this->quantidade;
     }
 
-    function getPreco(): double {
+    function getPreco() {
         return $this->preco;
     }
 
@@ -25,15 +25,15 @@ class Produto extends EntityBase {
         return $this->categoria;
     }
 
-    function setDescricao(string $descricao): void {
+    function setDescricao(string $descricao) {
         $this->descricao = $descricao;
     }
 
-    function setQuantidade(double $quantidade): void {
+    function setQuantidade( $quantidade) {
         $this->quantidade = $quantidade;
     }
 
-    function setPreco(double $preco): void {
+    function setPreco( $preco) {
         $this->preco = $preco;
     }
 

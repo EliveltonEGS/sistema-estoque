@@ -4,10 +4,10 @@ namespace app\entities;
 
 class Venda extends EntityBase {
 
-    private double $total;
+    private $total;
     private $data;
 
-    function getTotal(): double {
+    function getTotal() {
         return $this->total;
     }
 
@@ -15,11 +15,11 @@ class Venda extends EntityBase {
         return $this->data;
     }
 
-    function setTotal(double $total): void {
+    function setTotal($total) {
         $this->total = $total;
     }
 
-    function setData($data): void {
+    function setData($data) {
         $this->data = $data;
     }
 

@@ -3,6 +3,7 @@
 namespace app\data;
 
 use PDO;
+use PDOException;
 
 require 'config.php';
 
